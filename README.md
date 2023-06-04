@@ -8,3 +8,12 @@ Make sure you have the following prerequisites installed on your local machine:
 
 - [Terraform](https://www.terraform.io/downloads.html)
 - [AWS CLI](https://aws.amazon.com/cli/)
+
+
+## Modules
+
+A list of the different modules available through this repository is below.
+
+| Module Name | Description |
+|-------------|-------------|
+| [`verified-ses-identity`](./aws/verified-ses-identity/)   | Allows for the full creation and verification of a domain or email identity in Amazon SES |
