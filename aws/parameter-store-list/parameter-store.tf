@@ -6,6 +6,7 @@ resource "aws_ssm_parameter" "secure_string_parameter" {
   description = "${each.value.description}"
   key_id = var.kms_key_id
   tags = var.tags
+  tier = "${each.value.parameter_tier}"
 }
 
 resource "aws_ssm_parameter" "string_parameter" {
