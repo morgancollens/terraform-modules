@@ -26,7 +26,7 @@ data "aws_kms_key" "kms_key" {
 }
 
 module "param_store_list" {
-    source = "../../terraform-modules/aws/parameter-store-list"
+    source = "path/to/module"
     path_prefix = "app.example.com/production"
     kms_key_id = data.aws_kms_key.kms_key.key_id
 
